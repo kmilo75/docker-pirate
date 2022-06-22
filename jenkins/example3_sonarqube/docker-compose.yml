@@ -28,7 +28,7 @@ services:
   mysonarqube:
     container_name: my_custom_sonarqube
     # build: ./sonarqube_home
-    image: sonarqube:7.9.5-community
+    image: sonarqube:latest
     environment:
       SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
     ports:
