@@ -83,7 +83,7 @@ pipeline {
       }
       stage('Runing the regression') {
         steps{
-          sh "docker run -it ${REGISTRY}:${BUILD_NUMBER}"
+          sh "docker run ${REGISTRY}:${BUILD_NUMBER}"
         }
       }      
       // stage('Deploy docker-image') {
