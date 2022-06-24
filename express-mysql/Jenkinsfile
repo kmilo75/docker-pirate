@@ -81,7 +81,7 @@ pipeline {
           sh "cd ./${PROJECT_ROOT};docker build -t ${REGISTRY}:${BUILD_NUMBER} . "
         }
       }
-      stage('Runing the regression') {
+      stage('Runing the app') {
         steps{
           sh "docker run ${REGISTRY}:${BUILD_NUMBER}"
         }
